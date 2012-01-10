@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vim-plugin-autopairs"]
 	path = vim/bundle/vim-plugin-autopairs
 	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
