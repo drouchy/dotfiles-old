@@ -4,9 +4,6 @@ set nocompatible
 " Use tpope/vim-pathogen
 call pathogen#infect()
 
-" This was messing up submodules.
-" call pathogen#helptags()
-
 " Remap leader and decrease timeout to 0.5s
 let mapleader = ','
 set timeoutlen=500
@@ -96,9 +93,6 @@ let NERDSpaceDelims=1
 " SnipMate
 let g:snippets_dir = "~/.vim/snippets"
 
-" Autoclose
-let b:AutoClosePairs = AutoClose#DefaultPairsModified("", "<")
-
 " Mappings
 nmap <space> :
 nmap <C-h> <C-w>h
@@ -109,9 +103,9 @@ nmap <leader>bv :bel vsp<CR>
 
 imap jj <esc>
 
-" Auto-close HTML tags and prevents problems with Autoclose.
+" Auto-close HTML tags.
 autocmd FileType html
-  \ imap <leader>/ </<C-X><C-O><Right><Backspace>
+  \ imap <leader>/ </<C-X><C-O><Right>
 
 " automatically re-source vimrc on save vimrc
 if has("autocmd")

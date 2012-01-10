@@ -1,9 +1,6 @@
 [submodule "vim/bundle/vim-colors-sampler"]
 	path = vim/bundle/vim-colors-sampler
 	url = https://github.com/vim-scripts/Color-Sampler-Pack
-[submodule "vim/bundle/vim-plugin-autoclose"]
-	path = vim/bundle/vim-plugin-autoclose
-	url = https://github.com/Townk/vim-autoclose
 [submodule "vim/bundle/vim-plugin-nerdcommenter"]
 	path = vim/bundle/vim-plugin-nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
@@ -16,3 +13,6 @@
 [submodule "vim/bundle/vim-plugin-surround"]
 	path = vim/bundle/vim-plugin-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/bundle/vim-plugin-autopairs"]
+	path = vim/bundle/vim-plugin-autopairs
+	url = git://github.com/jiangmiao/auto-pairs.git
