@@ -1,0 +1,18 @@
+[submodule "vim/bundle/vim-colors-sampler"]
+	path = vim/bundle/vim-colors-sampler
+	url = https://github.com/vim-scripts/Color-Sampler-Pack
+[submodule "vim/bundle/vim-plugin-autoclose"]
+	path = vim/bundle/vim-plugin-autoclose
+	url = https://github.com/Townk/vim-autoclose
+[submodule "vim/bundle/vim-plugin-nerdcommenter"]
+	path = vim/bundle/vim-plugin-nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
+[submodule "vim/bundle/vim-plugin-nerdtree"]
+	path = vim/bundle/vim-plugin-nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/bundle/vim-plugin-snipmate"]
+	path = vim/bundle/vim-plugin-snipmate
+	url = https://github.com/msanders/snipmate.vim
+[submodule "vim/bundle/vim-plugin-surround"]
+	path = vim/bundle/vim-plugin-surround
+	url = https://github.com/tpope/vim-surround

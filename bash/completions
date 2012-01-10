@@ -1,0 +1,2 @@
+complete -C ~/.bash/completion_scripts/dir_code_completion -o default c
+complete -C ~/.bash/completion_scripts/dir_home_completion -o default h
