@@ -6,6 +6,9 @@ alias -- -="cd -"
 # Prettier, human-readable file lising.
 alias l="ls -aFGhl"
 
+# Bcat fix for man pages, etc.
+alias bcat="col -b | bcat"
+
 # Various shortcuts
 alias db="~/Dropbox"
 alias v="vim"
@@ -22,12 +25,17 @@ alias git=hub
 alias gi="git init"
 alias gs="git status"
 alias ga="git add"
+alias gaa="git add -A"
 alias gps="git push"
 alias gpm="git push origin master"
 alias gpl="git pull"
+alias gplm="git pull origin master"
 alias gc="git commit"
+alias gd="git diff"
 alias gcm="git commit -m"
+alias gck="git checkout"
 alias gl="git log"
+alias gb="git branch"
 
 # Ruby on Rails
 alias rs="rails server"
