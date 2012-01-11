@@ -8,9 +8,18 @@ task :install do
   Dir['*'].each do |file|
     # Add to this array for ignoring files.
     if file == 'zsh-custom'
+      Dir.new('oh-my-zsh/custom').entries.each do |file|
+        next if %w[example example.zsh . ..].include? file
+        unless Dir.new('zsh-custom').entries.include? file
+          puts "Removing oh-my-zsh/custom/#{file}"
+          system %Q{rm -rf $PWD/oh-my-zsh/custom/#{file}}
+        end
+      end
+      
       Dir.new(file).entries.each do |file|
         next if %w[. ..].include? file
-        puts "Copying $PWD/zsh-custom/#{file} to $PWD/oh-my-zsh/custom/#{file}"
+        puts "Replacing zsh-custom/#{file} to oh-my-zsh/custom/#{file}"
+        system %Q{rm -rf $PWD/oh-my-zsh/custom/#{file}}
         system %Q{cp -r $PWD/zsh-custom/#{file} $PWD/oh-my-zsh/custom/#{file}}
       end
     end
