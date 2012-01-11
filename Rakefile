@@ -1,5 +1,7 @@
 require 'rake'
 
+task :default => ["install"]
+
 desc "install the files into the user's home directory"
 task :install do
   replace_all = ENV['ra'] || false
@@ -62,6 +64,12 @@ task :install do
   end
   
   puts "Installation complete!"
+end
+
+desc "copies bash/aliases and bash/functions to zsh-custom/aliases.zsh and zsh-custom/functions.zsh"
+task :copy_bash_to_zsh do
+  system %Q{ cp bash/aliases zsh-custom/aliases.zsh }
+  system %Q{ cp bash/functions zsh-custom/functions.zsh }
 end
 
 def replace_file(file)
