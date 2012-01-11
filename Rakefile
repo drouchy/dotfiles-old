@@ -5,6 +5,9 @@ task :install do
   replace_all = ENV['ra'] || false
   force_all= ENV['fa'] || false
   
+  puts "Creating backup directory in ~/jclem_dotfiles_backup"
+  system %Q{mkdir $HOME/jclem_dotfiles_backup}
+
   Dir['*'].each do |file|
     # Add to this array for ignoring files.
     if file == 'zsh-custom'
@@ -57,11 +60,11 @@ task :install do
 end
 
 def replace_file(file)
-  system %Q{rm -rf "~/.#{file}"}
+  system %Q{mv "$HOME/.#{file}" "$HOME/jclem_dotfiles_backup"}
   link_file(file)
 end
 
 def link_file(file)
   puts "linking ~/.#{file}"
-  system %Q{ln -s "$PWD/#{file}" "~/.#{file}"}
+  system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
 end
