@@ -5,13 +5,18 @@ task :install do
   replace_all = ENV['ra'] || false
   force_all= ENV['fa'] || false
   
+  if Dir.exist? "#{ENV['HOME']}/jclem_dotfiles_backup"
+    puts "Removing previous backup directory at ~/jclem_dotfiles_backup"
+    system %Q{rm -rf #{ENV['HOME']}/jclem_dotfiles_backup}
+  end
+
   puts "Creating backup directory in ~/jclem_dotfiles_backup"
   system %Q{mkdir $HOME/jclem_dotfiles_backup}
 
   Dir['*'].each do |file|
     # Add to this array for ignoring files.
     if file == 'zsh-custom'
-      Dir.new('oh-my-zsh/custom').entries.each do |file|
+      Dir.entries('oh-my-zsh/custom').each do |file|
         next if %w[example example.zsh . ..].include? file
         unless Dir.new('zsh-custom').entries.include? file
           puts "Removing oh-my-zsh/custom/#{file}"
