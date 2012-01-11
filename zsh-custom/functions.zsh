@@ -14,7 +14,7 @@ function gac {
 }
 
 # Git add all changes, commit with a message, push to origin/master.
-function gacm {
+function gacp {
   Usage="Usage: gacm <commit message> <remote:origin> <remote branch:master>"
 
   if [ $# -eq 0 ]; then
