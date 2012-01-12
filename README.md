@@ -45,6 +45,16 @@ A collection of my dotfiles, including configuration for bash, zsh (via
 
 ---
 
+## Requirements
+
+* [git][git]
+* [hub][hub]*
+
+\* Optional. Edit `bash/aliases` and `zsh-custom/aliases.zsh` if you don't want
+to use it.
+
+---
+
 ## Installation
 
 jclem/dotfiles assumes that it will be kept in the `~/code/dotfiles` directory.
@@ -52,8 +62,10 @@ This location is important, as it symlinks configuration files in the home
 directory to files in this location.
 
 1. Back up your own dotfiles, if needed.*
-2. `$ cd ~/code/dotfiles`
-3. `$ rake install`
+2. git clone git@github.com:jclem/dotfiles.git ~/code/dotfiles
+3. `$ cd ~/code/dotfiles`
+4. `git submodule update --init`
+5. `$ rake install`
 
 Any files that the installer overwrites will be moved to
 `~/jclem_dotfiles_backup` where they can easily be recovered.
@@ -87,3 +99,5 @@ that after doing this, one must again run `rake install`.
 
 [oh_my_zsh]: https://github.com/robbyrussell/oh-my-zsh
 [git_submodules]: http://book.git-scm.com/5_submodules.html
+[git]: http://git-scm.com/
+[hub]: https://github.com/defunkt/hub
