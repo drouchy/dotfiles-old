@@ -34,7 +34,7 @@ task :install do
       end
     end
     
-    next if %w[Rakefile zsh-custom].include? file
+    next if %w[Rakefile README.md zsh-custom].include? file
     
     if force_all
       replace_file(file)
