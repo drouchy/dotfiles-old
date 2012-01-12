@@ -44,8 +44,8 @@ alias rg="rails generate"
 
 # Rake
 alias r="rake"
-alias dbm="db:migrate"
-alias dbtp="db:test:prepare"
+alias rdbm="rake db:migrate"
+alias rdbtp="rake db:test:prepare"
 
 # Alias commands with `bundle exec $command`
 bundle_commands="rake rspec spec cucumber cap watchr rails rackup guard thin unicorn"
