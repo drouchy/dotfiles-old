@@ -44,6 +44,10 @@ set autoindent
 set foldmethod=manual
 set nofoldenable
 
+autocmd FileType ruby setlocal foldmethod=syntax
+autocmd FileType css setlocal foldmethod=indent
+autocmd FileType scss setlocal foldmethod=indent
+
 " code completion
 " complete with xx in Insert mode.
 set ofu=syntaxcomplete
