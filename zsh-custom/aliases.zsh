@@ -22,15 +22,17 @@ alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && kil
 alias git=hub
 
 # git
+alias g="git"
 alias gi="git init"
 alias gs="git status"
 alias ga="git add"
 alias gaa="git add -A"
-alias gps="git push"
+alias gp="git push"
 alias gpm="git push origin master"
-alias gpl="git pull"
-alias gplm="git pull origin master"
+alias gl="git pull"
+alias glm="git pull origin master"
 alias gc="git commit"
+alias gcl="git clone"
 alias gd="git diff"
 alias gcm="git commit -m"
 alias gck="git checkout"

@@ -50,7 +50,7 @@ A collection of my dotfiles, including configuration for bash, zsh (via
 * [git][git]
 * [hub][hub]*
 
-\* Optional. Edit `bash/aliases` and `zsh-custom/aliases.zsh` if you don't want
+\* Optional. Remove `alias git=hub` from `bash/aliases` and `zsh-custom/aliases.zsh` if you don't want
 to use it.
 
 ---
