@@ -15,6 +15,7 @@ A collection of my dotfiles, including configuration for bash, zsh (via
 * git aliases: `gi` = `git init`
 * Rails aliases: `rs` = `rails server`
 * Rake aliases: `rdbm` = `rake db:migrate`
+* Quick python server: `serve` = `python -m SimpleHTTPServer`
 
 ### Directory completion
 
