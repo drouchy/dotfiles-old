@@ -2,6 +2,20 @@ function c { cd ~/code/$1; }  # cd into ~/code
 
 function h { cd ~/$1; }       # cd into ~
 
+# View a file with bcat and pygments
+function pview {
+  if [ $# -lt 1 ]; then
+    echo "Usage: pview <file> <lexer (optional)>"
+    return
+  fi
+
+  if [ $2 ]; then
+    LEXER="-l"
+  fi
+
+  pygmentize -Ofull,style=colorful,linenos=1, -f html $LEXER $2 $1 | bcat
+}
+
 # Quick backup a file
 function bak {
   if [ ! $# -eq 1 ]; then
