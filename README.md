@@ -29,7 +29,7 @@ A collection of my dotfiles, including configuration for bash, zsh (via
 * `gac <commit-message>`: Combines `git add -A` and `git commit -m`
 * `gacp <commit-message>`: Combines `gac` and `git push <remote:origin> <remote-branch:master>`
 * `bak <file>`: Copy `file` to `file.bak`
-* `pview <file> <lexer (optional)`: Uses pygmentize and bcat to open
+* `pview <file> <lexer (optional)>`: Uses pygmentize and bcat to open
   syntax-highlighted file in web browser.
 
 ### Vim Configuration
