@@ -21,6 +21,9 @@ alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && kil
 # hub (Github + Git https://github.com/defunkt/hub)
 alias git=hub
 
+# serve current directory (via python)
+alias serve="python -m SimpleHTTPServer"
+
 # git
 alias g="git"
 alias gi="git init"
