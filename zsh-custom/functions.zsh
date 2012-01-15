@@ -2,6 +2,19 @@ function c { cd ~/code/$1; }  # cd into ~/code
 
 function h { cd ~/$1; }       # cd into ~
 
+# Quick backup a file
+function bak {
+  if [ ! $# -eq 1 ]; then
+    echo "Usage: bak <file>"
+    return
+  elif [ ! -f $1 ]; then
+    echo "$1 is not a file."
+    return
+  fi
+
+  cp $1{,.bak}
+}
+
 # Git add all changes, commit.
 function gac {
   if [ ! $# -eq 1 ]; then

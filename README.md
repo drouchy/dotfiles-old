@@ -28,6 +28,7 @@ A collection of my dotfiles, including configuration for bash, zsh (via
 
 * `gac`: Combines `git add -A` and `git commit -m`
 * `gacp`: Combines `gac` and `git push <remote:origin> <remote-branch:master>`
+* `bak`: Copy `file` to `file.bak`
 
 ### Vim Configuration
 

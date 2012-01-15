@@ -69,6 +69,7 @@ end
 desc "copies bash/aliases and bash/functions to zsh-custom/aliases.zsh and zsh-custom/functions.zsh"
 task :copy_bash_to_zsh do
   system %Q{ cp bash/aliases zsh-custom/aliases.zsh }
+  system %Q{ cp bash/config zsh-custom/config.zsh }
   system %Q{ cp bash/functions zsh-custom/functions.zsh }
 end
 

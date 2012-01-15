@@ -2,7 +2,7 @@
 export CC=/usr/bin/gcc-4.2
 
 export PS1="\W $ "
-export EDITOR="mvim"
+export EDITOR="mvim -f"
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
