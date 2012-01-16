@@ -4,16 +4,12 @@ function h { cd ~/$1; }       # cd into ~
 
 # View a file with bcat and pygments
 function pview {
-  if [ $# -lt 1 ]; then
-    echo "Usage: pview <file> <lexer (optional)>"
+  if [ ! $# -eq 2 ]; then
+    echo "Usage: pview <file> <lexer>"
     return
   fi
 
-  if [ $2 ]; then
-    LEXER="-l"
-  fi
-
-  pygmentize -Ofull,style=colorful,linenos=1, -f html $LEXER $2 $1 | bcat
+  pygmentize -Ofull,style=colorful,linenos=1, -f html -l $2 $1 | bcat
 }
 
 # Quick backup a file
