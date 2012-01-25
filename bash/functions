@@ -17,7 +17,7 @@ function bak {
   if [ ! $# -eq 1 ]; then
     echo "Usage: bak <file>"
     return
-  elif [ ! -f $1 ]; then
+  elif [[ ! -f $1 ]]; then
     echo "$1 is not a file."
     return
   fi
