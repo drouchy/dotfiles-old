@@ -64,7 +64,7 @@ syntax on
 set hidden
 
 " stuff that needs organization
-set guifont=Andale\ Mono:h12
+set guifont=Inconsolata:h14
 set number
 set ruler
 set linespace=3
