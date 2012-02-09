@@ -3,6 +3,7 @@ set nocompatible
 
 " Use tpope/vim-pathogen
 call pathogen#infect()
+call pathogen#helptags()
 
 " Remap leader and decrease timeout to 0.5s
 let mapleader = ','
