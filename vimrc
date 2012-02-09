@@ -92,6 +92,9 @@ let NERDTreeShowHidden=1
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
+" Quicker command mode
+nmap ; :
+
 " NERDCommenter
 let NERDSpaceDelims=1
 
