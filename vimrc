@@ -110,6 +110,8 @@ imap jj <esc>
 " Auto-close HTML tags.
 autocmd FileType html
   \ imap <leader>/ </<C-X><C-O><Right>
+autocmd FileType eruby
+  \ imap <leader>/ </<C-X><C-O><Right>
 
 " automatically re-source vimrc on save vimrc
 if has("autocmd")
