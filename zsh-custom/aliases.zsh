@@ -19,7 +19,7 @@ alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
 
 # hub (Github + Git https://github.com/defunkt/hub)
-alias git=hub
+# alias git=hub
 
 # serve current directory (via python)
 alias serve="python -m SimpleHTTPServer"
