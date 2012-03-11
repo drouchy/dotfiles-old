@@ -58,6 +58,9 @@ imap <leader><tab> <C-p>
 filetype plugin on
 filetype indent on
 
+" Omnicomplete
+set ofu=syntaxcomplete#Complete
+
 " syntax highlighting
 syntax on
 
