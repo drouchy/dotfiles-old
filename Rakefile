@@ -32,6 +32,9 @@ task :install do
         system %Q{rm -rf $PWD/oh-my-zsh/custom/#{file}}
         system %Q{cp -r $PWD/zsh-custom/#{file} $PWD/oh-my-zsh/custom/#{file}}
       end
+      unless File.exist?('~/.oh-my-zsh/themes/custom-juanghurtado.zsh-theme')
+        system %Q{ln -s ~/.oh-my-zsh/custom/themes/custom-juanghurtado.zsh-theme ~/.oh-my-zsh/themes/custom-juanghurtado.zsh-theme}
+      end
     end
     
     next if %w[Rakefile README.md zsh-custom].include? file
