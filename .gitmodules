@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-symbols-strings"]
 	path = vim/bundle/vim-symbols-strings
 	url = https://github.com/rorymckinley/vim-symbols-strings.git
+[submodule "zsh-custom/plugins/zsh-syntax-highlighting"]
+	path = zsh-custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
