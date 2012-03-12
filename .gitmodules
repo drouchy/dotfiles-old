@@ -46,3 +46,12 @@
 [submodule "vim/bundle/vim-tomorrow"]
 	path = vim/bundle/vim-tomorrow
 	url = https://github.com/chriskempson/Vim-Tomorrow-Theme.git
+[submodule "vim/bundle/vim-blockle"]
+	path = vim/bundle/vim-blockle
+	url = https://github.com/jgdavey/vim-blockle.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/vim-symbols-strings"]
+	path = vim/bundle/vim-symbols-strings
+	url = https://github.com/rorymckinley/vim-symbols-strings.git
