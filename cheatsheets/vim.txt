@@ -1,0 +1,80 @@
+Navigation
+==========
+h/j/k/l => navigate left/down/up/right
+0/^/$/g_ => go to starting/the first non blank character/end/last non blank character of the line.
+H/M/L – Go to the first line /  middle line /  last line of current screen.
+<ctrl>+f/b => Jump forward/backwards one full screen
+<ctrl>+d/u – Jump forward (down) / Jump back (up) one half screen
+{} praragraph - () phrase - b/w word
+% match current brackets
+gg/G => navigate to the begining/end of the file
+
+Text selection
+==============
+V => selects entire lines,  v => selects range of text
+<ctrl>+v => selects columns, gv => reselect block
+
+Edition
+=======
+<ctrl><seines 
+v       - selects range of text
+ctrl-v  - selects columns
+gv      - reselect blockft>+T: remove trailing whitespaces
+
+Indentation
+===========
+[x]>> [x]<< increment/decrement indentation for x lines
+={ indent current block
+== indent line
+gg=G indent current file
+
+Screen Split
+============
+:split :vsplit split the screen
+<ctrl>+w, <ctrl>+w: change focus - <ctrl>+w, r: roll focus
+<ctrl>+w, [x]><: increase/decrease size of the current split
+<ctrl>+w, =: equal size on splits - <ctrl>+w, |: current split uses all size
+:sp,vsp FILE_NAME: open the file in a horizontal/vertical split
+<ctrl>+w,o => toggle split view
+
+Files
+=====
+:Tidy => reformat the file
+
+Ruby
+====
+<leader>+b => toggle block type
+
+Rails
+=====
+!s: run current spec, !S: run all spec in the file, !rs: run all specs
+:A: alternate file, :R: relative file, :RV: relative file in a Vsplit
+:Rmodel, :Rcontroller, :Rview: open relative file
+:Rake: run rake command depending on the current file
+
+CTags
+=====
+<F8> => scan tags, <ctrl>+] => navigate tag, <ctrl>+t => navigate back
+<ctrl>+i/o => navigate in/out
+\l => show taglist, :tag getUser => Jump to getUser method
+:tn => go to next search result, :tp => to to previous search result
+:ts (or tselect) => List the current tags
+
+Ack
+===
+:Ack => search    --type=TYPE search only in TYPE files
+:AckAdd => the matches are appended to the current quickfix list.
+:AckFromSearch => the pattern is from previous search.
+
+Quick View
+----------
+o  =>  open (same as enter)      go => preview file (open but maintain focus on ack.vim results)
+t  =>  open in new tab           T  => open in new tab silently
+v  =>  open in vertical split    gv => open in vertical split silently
+q  =>  close the quickfix window
+
+VimDiff
+=======
+:Gitdiff => diff file, :Gedit => return in edit mode
+<ctrl>+h => keep right modification, <ctrl>+l => keep left modification
+[c => navigate to previous conflict, ]c => navigate to next conflict
