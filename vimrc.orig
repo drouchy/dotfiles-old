@@ -312,6 +312,7 @@ map! <C-H> :set hlsearch! hlsearch?<CR>
 
 " Command-T
 map <C-p> :CommandT<Cr>
+<<<<<<< HEAD
 map <leader>p :CommandTFlush<Cr>
 
 let g:SuperTabDefaultCompletionType = "<c-x><c-n><c-p>"
@@ -320,3 +321,6 @@ highlight Pmenu ctermbg=238 gui=bold
 highlight PmenuSel ctermfg=238 gui=bold
 highlight Search ctermfg=Black
 highlight Visual ctermfg=Black
+=======
+map <C-F> :CommandTFlush<Cr>
+>>>>>>> 75fd1dff72c2d26ff586326eecb759e8d0849f71
