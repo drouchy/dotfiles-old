@@ -6,7 +6,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 " Remap leader and decrease timeout to 0.5s
-let mapleader = ','
+"let mapleader = ','
 set timeoutlen=500
 
 " Line numbers
@@ -312,4 +312,12 @@ map! <C-H> :set hlsearch! hlsearch?<CR>
 
 " Command-T
 map <C-p> :CommandT<Cr>
-map <C-F> :CommandTFlush<Cr>
+map <leader>p :CommandTFlush<Cr>
+
+
+let g:SuperTabDefaultCompletionType = "<c-x><c-n><c-p>"
+
+highlight Pmenu ctermbg=238 gui=bold
+highlight PmenuSel ctermfg=238 gui=bold
+highlight Search ctermfg=Black
+highlight Visual ctermfg=Black

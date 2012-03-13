@@ -1,6 +1,6 @@
 [user]
   name = David Rouchy
-  email = drouchy@gmail.com
+  email = david.rouchy@gamesys.co.uk
 [merge]
         keepBackup = false
         tool = vimdiff
