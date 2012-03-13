@@ -1,0 +1,28 @@
+[user]
+  name = David Rouchy
+  email = drouchy@gmail.com
+[merge]
+        keepBackup = false
+        tool = vimdiff
+[core]
+	editor = vim 
+
+[alias]
+  lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(blue)<%an>%Creset' --abbrev-commit --date=relative"
+  st = status
+  ci = commit
+  cia = commit --amend
+  co = checkout
+  br = branch
+  sb = show-branch
+  cp = cherry-pick
+  staged = diff --cached
+  rb = rebase
+  rbc = rebase --continue
+  rbs = rebase --skip
+  rl = reflog
+  rs = remote show
+  rt = remote
+  ru = remote update
+  rp = remote prune
+  sm = submodule

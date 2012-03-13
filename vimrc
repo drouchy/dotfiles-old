@@ -309,3 +309,7 @@ map [ :tabprev<Cr>
 map ] :tabnext<Cr>
 
 map! <C-H> :set hlsearch! hlsearch?<CR>
+
+" Command-T
+map <C-p> :CommandT<Cr>
+map <C-F> :CommandTFlush<Cr>
