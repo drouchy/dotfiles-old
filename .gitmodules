@@ -45,7 +45,7 @@
 	url = https://github.com/ervandew/supertab.git
 [submodule "vim/bundle/vim-tomorrow"]
 	path = vim/bundle/vim-tomorrow
-	url = https://github.com/chriskempson/Vim-Tomorrow-Theme.git
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
 [submodule "vim/bundle/vim-blockle"]
 	path = vim/bundle/vim-blockle
 	url = https://github.com/jgdavey/vim-blockle.git
